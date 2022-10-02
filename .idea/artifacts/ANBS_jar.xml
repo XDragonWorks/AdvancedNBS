@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ANBS:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ANBS_jar</output-path>
+    <root id="archive" name="ANBS.jar">
+      <element id="module-output" name="ANBS" />
+    </root>
+  </artifact>
+</component>

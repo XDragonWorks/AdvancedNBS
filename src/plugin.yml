@@ -1,0 +1,20 @@
+name: AdvancedNBS
+description: Early advanced plugin to control the sound with NBAPI
+version: 1.0.4
+main: fr.iiztp.anbs.main.AdvancedNBS
+author: Matthieu Amet
+api-version: 1.13
+depend:
+  - MLib
+  - NoteBlockAPI
+softdepend:
+  - WorldGuard
+  - PlaceholderAPI
+  - MythicMobs
+  - GCore
+  - QuestCreator
+  - CrackShot
+commands:
+  anbs:
+    description: All of the plugin's command
+    usage: /anbs <reload:song:radio>

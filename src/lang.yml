@@ -1,0 +1,34 @@
+#First of all, if you need support go to : https://gitlab.com/iiztp/advancednbs/-/wikis/home
+#Category "Lang.yml and messages"
+#If you find any bugs or have any suggestion : https://gitlab.com/iiztp/advancednbs/-/issues
+#Quick reminder :
+# %r refers to the radio name, returns nothing if there is no radio
+# %rl refers to the listeners of the radio, returns -1 if there is no radio
+# %v refers to the volume of the player
+# %a refers to the song author, returns nothing if there is no song
+# %t refers to the song title, returns nothing if there is no song
+# %d refers to the song description, returns nothing if there is no song
+# %fn refers to the song filename, returns nothing if there is no song
+#For some code reasons, you cannot use the placeholders in string errors, you normally don't need them tho :keepo:
+
+#Send a message in the chat if there is an action made
+active: true
+
+player:
+  music:
+    play: "&a[AdvancedNBS] Playing %t - %a"
+    played: "&4[AdvancedNBS] Song is already playing!"
+    stop: "&4[AdvancedNBS] Stopped"
+    stopped: "&4[AdvancedNBS] Song is already stopped!"
+    next: "&a[AdvancedNBS] Now playing %t - %a, %fn"
+    volumeChange: "&a[AdvancedNBS] Your volume is now at %v/100"
+    volumeError: "&4[AdvancedNBS] You must enter a valid number between 0 and 100"
+    noPlaylist: "&4[AdvancedNBS] No playlist loaded!"
+  radio:
+    join: "&a[AdvancedNBS] You joined the %r radio. There is %rl listeners."
+    joined: "&4[AdvancedNBS] You already listen to this radio!"
+    resume: "&a[AdvancedNBS] Resumed %r radio."
+    leave: "&4[AdvancedNBS] You left the %r radio. You have now the world's music"
+    notExist: "&4[AdvancedNBS] This radio does not exists!"
+    noRadio: "&4[AdvancedNBS] You do not listen to any radio!"
+    noPermission: "&4[AdvancedNBS] You do not have the permission to go in this radio!"
