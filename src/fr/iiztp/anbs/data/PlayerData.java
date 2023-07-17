@@ -135,6 +135,7 @@ public class PlayerData
 		secondsWithoutMusic = -1;
 		rsp.destroy();
 		rsp = new RadioSongPlayer(list);
+		rsp.setEnable10Octave(true);
 		rsp.addPlayer(player);
 		rsp.setAutoDestroy(false);
 		rsp.setRandom(AdvancedNBS.getInstance().getReader().getBoolean("isRandom"));
@@ -152,6 +153,7 @@ public class PlayerData
 		RadioSongPlayer radioPlayer = radio.getRsp();
 		rsp.destroy();
 		rsp = new RadioSongPlayer(radioPlayer.getPlaylist());
+		rsp.setEnable10Octave(true);
 		rsp.addPlayer(player);
 		rsp.playSong(radioPlayer.getPlayedSongIndex());
 		rsp.setTick(radioPlayer.getTick());

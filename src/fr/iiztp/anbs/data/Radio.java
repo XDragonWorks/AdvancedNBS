@@ -49,6 +49,7 @@ public class Radio
 	{
 		this.name = name;
 		this.rsp = new RadioSongPlayer(list);
+		this.rsp.setEnable10Octave(true);
 		this.rsp.setRepeatMode(RepeatMode.ALL);
 		this.rsp.setPlaying(true);
 		this.rsp.setAutoDestroy(false);
